@@ -1,0 +1,44 @@
+* {
+    base: #1e1e2e;
+    text: #cdd6f4;
+    mauve: #cba6f7;
+    surface: #313244;
+    font: "JetBrainsMono Nerd Font 11";
+    background-color: transparent;
+    text-color: @text;
+}
+window {
+    location: center;
+    width: 640px;
+    background-color: @base;
+    border: 2px;
+    border-color: @mauve;
+    border-radius: 12px;
+}
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 12px;
+    spacing: 8px;
+}
+inputbar {
+    children: [ prompt, entry ];
+    padding: 8px 12px;
+    spacing: 8px;
+    background-color: @surface;
+    border-radius: 8px;
+}
+prompt {
+    text-color: @mauve;
+}
+listview {
+    lines: 8;
+    scrollbar: false;
+}
+element {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+element selected {
+    background-color: @mauve;
+    text-color: @base;
+}

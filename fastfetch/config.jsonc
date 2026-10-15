@@ -1,0 +1,33 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "/home/ahmed/.config/fastfetch/paz-small-color.txt",
+    "padding": { "right": 3 },
+    "color": { "1": "38;2;203;166;247" }
+  },
+  "display": {
+    "color": { "keys": "38;2;180;190;254", "title": "38;2;245;194;231" }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "wm",
+    "theme",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "battery",
+    "break",
+    "colors"
+  ]
+}

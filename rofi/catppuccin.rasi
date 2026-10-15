@@ -1,0 +1,35 @@
+* {
+    base: #1e1e2e;
+    text: #cdd6f4;
+    mauve: #cba6f7;
+    font: "JetBrainsMono Nerd Font 11";
+    background-color: transparent;
+    text-color: @text;
+}
+window {
+    location: north east;
+    anchor: north east;
+    x-offset: -8px;
+    y-offset: 36px;
+    width: 200px;
+    background-color: @base;
+    border: 2px;
+    border-color: @mauve;
+    border-radius: 10px;
+}
+mainbox {
+    children: [ listview ];
+    padding: 8px;
+}
+listview {
+    lines: 5;
+    scrollbar: false;
+}
+element {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+element selected {
+    background-color: @mauve;
+    text-color: @base;
+}
